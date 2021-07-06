@@ -3,7 +3,7 @@ import {ImageBackground, TouchableOpacity, View, StyleSheet, Image} from "react-
 import { LinearGradient } from 'expo-linear-gradient'
 import DisneyMovies from "../screens/DisneyMovies"
 
-export default function ButtonHomeStudios({src, id}){
+export default function ButtonHomeStudios({src, id, navigation}){
     const [studio, setStudio] = useState();
 
     const checkStudio = ()=>{
@@ -13,7 +13,7 @@ export default function ButtonHomeStudios({src, id}){
     }
     return(
         <View>
-                <TouchableOpacity style={styles.Home_btnStudios} onPress={checkStudio}>
+                <TouchableOpacity style={styles.Home_btnStudios} onPress={navigation.navigate("Disney")}>
                     <LinearGradient colors={["#30323e", "#1e1f2a"]} style={{borderRadius: 10}}>
                         <Image style={styles.Home_btnImgStudios} source={{uri:src}} />
                     </LinearGradient>
