@@ -22,14 +22,29 @@ export default function HomeScreen({navigation}){
                             <Image style={styles.Home_btnImgStudios} source={{uri:"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FFA0BEBAC1406D88929497501C84019EBBA1B018D3F7C4C3C829F1810A24AD6E/scale?width=600&aspectRatio=1.78&format=png"}} />
                         </LinearGradient>
                     </TouchableOpacity>
-                    <TouchableOpacity title={"Disney"} onPress={()=>navigation.navigate("Disney")} style={styles.Home_btnStudios}>
+                    <TouchableOpacity title={"Disney"} onPress={()=>navigation.navigate("Pixar")} style={styles.Home_btnStudios}>
+                        <LinearGradient colors={["#30323e", "#1e1f2a"]} style={{borderRadius: 10}}>
+                            <Image style={styles.Home_btnImgStudios} source={{uri:"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F4E1A299763030A0A8527227AD2812C049CE3E02822F7EDEFCFA1CFB703DDA5/scale?width=600&aspectRatio=1.78&format=png"}} />
+                        </LinearGradient>
+                    </TouchableOpacity>
+                    <TouchableOpacity title={"Disney"} onPress={()=>navigation.navigate("Marvel")} style={styles.Home_btnStudios}>
                         <LinearGradient colors={["#30323e", "#1e1f2a"]} style={{borderRadius: 10}}>
                             <Image style={styles.Home_btnImgStudios} source={{uri:"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=600&aspectRatio=1.78&format=png"}} />
                         </LinearGradient>
                     </TouchableOpacity>
+                    <TouchableOpacity title={"Disney"} onPress={()=>navigation.navigate("StarWars")} style={styles.Home_btnStudios}>
+                        <LinearGradient colors={["#30323e", "#1e1f2a"]} style={{borderRadius: 10}}>
+                            <Image style={styles.Home_btnImgStudios} source={{uri:"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png"}} />
+                        </LinearGradient>
+                    </TouchableOpacity>
+                    <TouchableOpacity title={"Disney"} onPress={()=>navigation.navigate("NatGeo")} style={styles.Home_btnStudios}>
+                        <LinearGradient colors={["#30323e", "#1e1f2a"]} style={{borderRadius: 10}}>
+                            <Image style={styles.Home_btnImgStudios} source={{uri:"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2EF24AA0A1E648E6D1A3B26491F516632137ED87AB22969D153316F8BD670FB5/scale?width=600&aspectRatio=1.78&format=png"}} />
+                        </LinearGradient>
+                    </TouchableOpacity>
                 </ButtonsStudioContainer>
-                <LabelRecommended text={"Recommended for you"}></LabelRecommended>
-                <CarouselMovies></CarouselMovies>
+                <LabelRecommended text={"Recommended for you"} />
+                <CarouselMovies />
             </LinearGradient>
         </View>
     )
@@ -53,11 +68,3 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
     }
 })
-/* <ButtonHomeStudios navigator={navigation} src={"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F4E1A299763030A0A8527227AD2812C049CE3E02822F7EDEFCFA1CFB703DDA5/scale?width=600&aspectRatio=1.78&format=png"}>
-                    </ButtonHomeStudios>
-                    <ButtonHomeStudios navigator={{navigation}} src={"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C90088DCAB7EA558159C0A79E4839D46B5302B5521BAB1F76D2E807D9E2C6D9A/scale?width=600&aspectRatio=1.78&format=png"}>
-                    </ButtonHomeStudios>
-                    <ButtonHomeStudios navigator={{navigation}} src={"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5A9416D67DC9595496B2666087596EE64DE379272051BB854157C0D938BE2C26/scale?width=600&aspectRatio=1.78&format=png"}>
-                    </ButtonHomeStudios>
-                    <ButtonHomeStudios  navigator={{navigation}} src={"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2EF24AA0A1E648E6D1A3B26491F516632137ED87AB22969D153316F8BD670FB5/scale?width=600&aspectRatio=1.78&format=png"}>
-                    </ButtonHomeStudios>*/
